@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ShopEase</div>
+            <p class="hello_content">
+                "Enjoy 
+                <strong>"Free Shipping"</strong>
+                on Eligible Items. Shop Now"
+            </p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </div>  
+
+
+        </nav>
+        <div class="hero">
+            <h1>Welcome to ShopEase</h1>
+            <p>Discover the best deals on your favorite items.</p>
+            <button id="shopNowButton">Shop Now</button>
+        </div>
+    </header>
+    <div class="carousel">
+        <img src="carousal1.jpg" class="active" alt="Image 1">
+        <img src="carousal2.jpg" alt="Image 2">
+        <img src="carousal3.jpg" alt="Image 3">
+        <img src="carousal4.jpg" alt="image 4">
+        <div class="carousel-buttons">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+        <div class="carousel-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+            <div class="indicator" data-index="2"></div>
+        </div>
+    </div>
+    <main>
+        <section id="products">
+            <h2>Featured Products : Watches </h2>
+            <div class="product-gallery">
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Timex</h3>
+                    <p>₹ 1499</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Poedagar</h3>
+                    <p>₹2299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Rolex</h3>
+                    <p>₹9199</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product4.jpg" alt="Product 4">
+                    <h3>Olevs</h3>
+                    <p>₹ 5199</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <h2>Featured Products : Wallets </h2>
+            <div class="product-gallery">
+                <div class="product-card">
+                    <img src="image12.jpg" alt="Product 1">
+                    <h3>Harber</h3>
+                    <p>₹ 3499</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product22.jpg" alt="Product 2">
+                    <h3>WildHorn</h3>
+                    <p>₹3299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product33.jpg" alt="Product 3">
+                    <h3>Puma</h3>
+                    <p>₹5299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images18.jpg" alt="Product 4">
+                    <h3>Long Champ</h3>
+                    <p>₹1599</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <h2>Featured Products : Mobiles </h2>
+            <div class="product-gallery">
+                <div class="product-card">
+                    <img src="oppoReno13.jpg" alt="Product 1">
+                    <h3>Oppo Reno 13</h3>
+                    <p>₹ 13499</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="oppo.jpg" alt="Product 2">
+                    <h3>Oppo K12</h3>
+                    <p>₹11299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="oppof27.jpg" alt="Product 3">
+                    <h3>Oppo F27</h3>
+                    <p>₹15299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="oppoA3.jpg" alt="Product 4">
+                    <h3>Oppo A3</h3>
+                    <p>₹18599</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Add this section below your existing product sections -->
+        <section id="api-products">
+            <h2>API Products</h2>
+            <div class="product-gallery" id="api-product-gallery">
+        <!-- API products will be dynamically inserted here -->
+           </div>
+        </section>
+
+        <!-- New To-Do List Section -->
+        <section id="todo-list">
+            <h2>To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addTaskButton">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>        
+    </main>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to MyShop! We are dedicated to providing you with the best online shopping experience. 
+            Our mission is to offer high-quality products at competitive prices, ensuring customer satisfaction 
+            at every step. Shop with us and discover the difference.
+        </p>
+    </section>
+    <div class="container">
+        <div class="bow00w"> 
+            <div class="AZc31B">CONSUMER POLICY</div>
+            <a href="/pages/returnpolicy?otracker=footer_navlinks">Cancellation & Returns</a>
+            <a href="/pages/terms?otracker=footer_navlinks">Terms Of Use</a>
+            <a href="/pages/paymentsecurity?otracker=footer_navlinks">Security</a>
+            <a href="/pages/privacypolicy?otracker=footer_navlinks">Privacy</a>
+            <a href="/sitemap?otracker=footer_navlinks">Sitemap</a>
+            <a href="/pages/grievance-redressal-mechanism?otracker=footer_navlinks">Grievance Redressal</a>
+            <a href="/pages/ewaste-compliance-tnc?otracker=footer_navlinks">EPR Compliance</a>
+        </div>
+    
+        <div class="bow00w"> 
+            <div class="AZc31B">ABOUT</div>
+            <a href="/helpcentre?otracker=footer_navlinks">Contact Us</a>
+            <a href="https://corporate.shopease.net/corporate-home">About Us</a>
+            <a href="https://www.shopeasecareers.com/?otracker=footer_navlinks">Careers</a>
+            <a href="http://stories.shopease.com/?otracker=footer_navlinks">ShopEase Stories</a>
+            <a href="http://stories.shopease.com/category/top-stories/news/">Press</a>
+            <a href="/corporate-information">Corporate Information</a>
+        </div>
+    
+        <div class="bow00w">
+            <div class="AZc31B">HELP</div>
+            <a href="/pages/payments">Payments</a>
+            <a href="/pages/shipping">Shipping</a>
+            <a href="/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG">Cancellation & Returns</a>
+            <a href="/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a>
+        </div>
+        
+        <div>
+            <div class="_3I5N7v">GROUP COMPANIES</div>
+            <a href="https://www.myntra.com/" class="H1WMPX" rel="noopener noreferrer" target="_blank" aria-label="Myntra">Myntra</a>
+            <a href="https://www.cleartrip.com/" class="H1WMPX" rel="noopener noreferrer" target="_blank" aria-label="Cleartrip"></a>
+            <a href="https://www.shopsy.in" class="H1WMPX" rel="noopener noreferrer" target="_blank" aria-label="Shopsy">Shopsy</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
